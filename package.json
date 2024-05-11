@@ -1,0 +1,35 @@
+{
+	"name": "obsidian-cratosw",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "obsidian-cratosw",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"version": "node version-bump.mjs && git add manifest.json versions.json"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^20.12.11",
+		"@typescript-eslint/eslint-plugin": "7.8.0",
+		"@typescript-eslint/parser": "7.8.0",
+		"builtin-modules": "4.0.0",
+		"@types/react": "18.3.1",
+		"@types/react-dom": "18.3.0",
+		"esbuild": "0.21.1",
+		"obsidian": "latest",
+		"tslib": "2.6.2",
+		"typescript": "5.4.5"
+	},
+	"dependencies": {
+		"@code-hike/mdx": "^0.9.0",
+		"@mdx-js/mdx": "^3.0.1",
+		"framer-motion": "11.1.9",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"shiki": "^1.5.1"
+	}
+}
